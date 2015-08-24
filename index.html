@@ -6,20 +6,17 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="main-header-header clearfix">
+			<div class="status-bar clearfix">
 				<div class="logo"><a href="#">Техномарт</a></div>
 				<input type="search"> 
-
-				<!--можно input этот сделать вне формы?-->
-				<a>Закладки:0</a> 
-				<!-- ноль нужно оформить какой-то переменной? -->
-				<a>Корзина:0</a>
-				<a>Оформить заказ</a>
+				<a href="#">Закладки:0</a> 
+				<a href="#">Корзина:0</a>
+				<a href="#">Оформить заказ</a>
 			</div>
 			<div class="main-header-container clearfix">
 				<p class="info"> Интернет-магазин строительных материалов и инструментов для ремонта </p>
 				<div class="contacts">
-					<p> +7 (812) 555-05-55 </p>
+					<a href="tel:+78125550555"> +7 (812) 555-05-55 </a>
 					<p> г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8  </p>
 				</div>
 				<div class="user-block">
@@ -56,62 +53,63 @@
 		<main class="container">
 			<section class="promo">
 				<div class="promo-slider">
-					<div class="promo-slider-title">   
-					 <!-- я не знаю как cделать чтобы надпись менялась вместе с картинкой, может это её часть? -->
-						<p>Дрели</p>
-						<p>Соседям на радость!</p>
+					<div class="slider__item item-drill">
+						<div class="slider__item-desc">
+							<div class="slider__item-title">Дрели</div>
+							<div class="slider__item-slogan">Соседям на радость!</div>
+							<img src="http://placehold.it/620x265" alt="Дрели" width="620" height="265">
+						</div>
+					</div>
+					<div class="slider__item item-perforator">
+						<div class="slider__item-desc">
+							<div class="slider__item-title">Перфораторы</div>
+							<div class="slider__item-slogan">Настоящие мужские игрушки</div>
+							<img src="http://placehold.it/620x265" alt="Перфораторы" width="620" height="265"> 
+						</div>
 					</div>
                 	<input type="radio" id="btn-1" name="toggle">
                 	<input type="radio" id="btn-2" name="toggle" checked>
+                	<label for="btn-1"></label>
+                    <label for="btn-2"></label>                	
                 	<div class="slider-controls">
-                    	<label for="btn-1"></label>
-                    	<label for="btn-2"></label>
                     	<a class="btn prev" href="#">&lt;</a>
                     	<a class="btn next" href="#">&gt;</a>
-                	</div>                    
-                	<div class="slider-inner">
-                    	<div class="slider-slides">
-                        	<img src="http://placehold.it/620x265" alt="Дрели" width="620" height="265">
-                        	<img src="http://placehold.it/620x265" alt="Перфораторы" width="620" height="265">            
-                    	</div>
-            		</div>
-            		<a class="open-catalog">Открыть каталог</a>
+                	</div> 
+                	<a class="open-catalog">Открыть каталог</a>
 				</div>
-				<ul class="promo-items"> 
-				<!-- на сколько тут уместен список? -->
-					<li>
+				<div class="promo-items"> 
+					<div>
 						<div class="flag">new</div>
-						<!-- может это сделать можно и с помощью ::before? -->
 						Материалы
 						<a href="#">На любой вкус</a>
-					</li>
-					<li>
+					</div>
+					<div>
 						<div class="flag">new</div>
 						<!-- display:none; ect -->
 						Инструмент
 						<a href="#">На все случаи</a>
-					</li>
-					<li>
+					</div>
+					<div>
 						<div class="flag">new</div>
 						Техника
 						<a href="#">Для стройки</a>
-					</li>
-					<li>
+					</div>
+					<div>
 						<div class="flag">new</div>
 						Скидки 50%
 						<a href="#">На 150 товаров</a>
-					</li>
-					<li>
+					</div>
+					<div>
 						<div class="flag">new</div>
 						Доставка
 						<a href="#">Бесплатно</a>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</section>
 			<section class="popular">
 				<section class="popilar-product">
 					<div class="title">
-						<p>Популярные товары:</p>
+						<h2>Популярные товары:</h2>
 						<a href="#">Все популярные товары</a>
 					</div>
 					<div class="items cleafrix">
@@ -164,57 +162,55 @@
 				</section>
 				<section class="popular-manufacturer">
 					<div class="title">
-						<p>Популярные производители:</p>
+						<h2>Популярные производители:</h2>
 						<a href="#">Все производители</a>
 					</div>
-					<div class="items cleafrix">
-						<ul>
-							<li>
+					<div class="items cleafrix">						
+							<div>
 								<a class="manufacturer-logo" href="#">
 									<img src="http://placehold.it/180x80" alt="BOSCH" width="180" height="80">
 								</a>
-							</li>
-							<li>
+							</div>
+							<div>
 								<a class="manufacturer-logo" href="#">
 									<img src="http://placehold.it/180x80" alt="Makita" width="180" height="80">
 								</a>
-							</li>
-							<li>
+							</div>
+							<div>
 								<a class="manufacturer-logo" href="#">
 									<img src="http://placehold.it/180x80" alt="DeWALT" width="180" height="80">
 								</a>
-							</li>
-							<li>
+							</div>
+							<div>
 								<a class="manufacturer-logo" href="#">
 									<img src="http://placehold.it/180x80" alt="Интерскол" width="180" height="80">
 								</a>
-							</li>
-							<li>
+							</div>
+							<div>
 								<a class="manufacturer-logo" href="#">
 									<img src="http://placehold.it/180x80" alt="HITACHI" width="180" height="80">
 								</a>
-							</li>
-							<li>
+							</div>
+							<div>
 								<a class="manufacturer-logo" href="#">
 									<img src="http://placehold.it/180x80" alt="LG" width="180" height="80">
 								</a>
-							</li>
-							<li>
+							</div>
+							<div>
 								<a class="manufacturer-logo" href="#">
 									<img src="http://placehold.it/180x80" alt="AEG" width="180" height="80">
 								</a>
-							</li>
-							<li>
+							</div>
+							<div>
 								<a class="manufacturer-logo" href="#">
 									<img src="http://placehold.it/180x80" alt="metabo" width="180" height="80">
 								</a>
-							</li>
-						</ul>
+							</div>
 					</div>
 				</section>
 			</section>
 			<section class="services">
-				<div class="title">Сервисы</div>
+				<h2>Сервисы</h2>
 				<p class="short-info">
 					Хороший интернет-магазин отличается от плохого не только ценами! <br>
 					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
