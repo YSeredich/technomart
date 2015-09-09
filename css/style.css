@@ -14,6 +14,8 @@ body{
   clear: both;
 }
 h2{
+
+
 	font-size: 30px;
 	text-transform: uppercase;
 }
@@ -126,8 +128,7 @@ input[type="search"]{
 .flag{
 	display:none;
 }
-.item{
-
+.promo-item{
 	width:300px;
 	height:123px;
 	margin-bottom: 20px;
@@ -149,27 +150,22 @@ input[type="search"]{
 	margin-left: 20px;
 	background:#4aafde;
 }
-
 .item-3{
 	float:left;
 	margin-left: 20px;
 	background:#cc79d1;
 }
-
 .item-4{
 	float:right;
 	background:#85d179;
 }
-
 .item-5{
 	float:right;
 	background:#f6b22d;
 }
-
 .item-perforator{
 	display:none;
 }
-
 .promo-slider {
 	float: left;
 	position:relative;
@@ -177,17 +173,72 @@ input[type="search"]{
 	height:266px;
 	margin-top: 200px;
 
-	background-color: rgba(0,250,0,0.2);
+	background-color: rgba(0,250,0,0.2);/*для наглядности*/
+}
+.btn{
+	display: block;
+	width:200px;/*для разметки*/
+	padding:12px 50px;
+
+	color:#fff;
+
+	background-color: #ee3643;
+}
+.actions{
+	display:none;
+}
+.items-product{
+	font-size: 0;
 }
 
+.item{
+	display: inline-block;
+	margin-right: 20px;
+	width:220px;
+	height:320px;
+
+	vertical-align: middle;
+	font-size: 18px;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 
 
+	background-color: rgba(0,0,250,0.2);
+}
 
+.item:last-child{
+	margin-right: 0;
+}
+.title{
+	background-color: #f7f3ec;
+	padding:26px 24px;
+	margin-bottom: 20px;
+}
 
+.title h2{
+	float: left;
+}
+.title .btn{
+	margin-left: 663px;/*не получается поставить как надо*/
+	widht:253px;
 
+}
+.items{
+	font-size: 0;
+}
+.items div{
+	display: inline-block;
+	width:220px;
+	height:145px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	vertical-align: middle;
 
+	background-color: rgba(0,0,250,0.2);
+}
 
-
+.item div:nth-child(4n){/*не пойму чего они не стали как надо, вроде все ровно 4*220+3*20=940*/ 
+	margin-right: 0;
+}
 
 
 
