@@ -1,21 +1,162 @@
 body{
+	margin: 0;
+   padding: 0;
+	min-width: 1200px;
+
 	font-size: 13px;
 	line-height: 24px;
 	color: #000;
-	font-family: "PT Sans", sans-serif;
+	font-family: "Cuprum", sans-serif;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 h2{
 	font-size: 30px;
 	text-transform: uppercase;
-	font-family: "Cuprum", sans-serif;
 }
 
 .logo{
-	font-size: 24px;
-	line-height: 24px;
-	color: #fff;
+	float:left;
+}
+
+.logo a{
+	display: block;
+	padding:10px 50px;
+
 	text-transform: uppercase;
-	font-weight:bold;
-	font-family: "Cuprum", sans-serif;
+	font-weight:bold;	
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;	
+
+	background-color: #ee3643;
+	box-shadow:0 5px #b52933;
+}
+
+input[type="search"]{
+	margin-left:45px;
+	/*width:270px;*/
+}
+
+.status-bar a{
+	display:inline-block;
+	padding:10px 30px;
+
+	color:#fff;
+	text-decoration: none;
+	font-size: 17px;
+}
+.order {
+	background-color: #63a63e;
+}
+.header-info{
+	padding-top: 45px;
+}
+.short-info{
+	float: left;
+	width:200px;
+	margin:50px;
+	margin-bottom: 40px;
+	margin-top: 5px;
+
+	font-style: italic;
+	color:#ee3643;
+	font-size: 16px;
+}
+
+.contacts{
+	float:left;
+	margin-left:19px;
+}
+.contacts a{
+	display: block;
+	padding-left: 67px;
+	width:197px;
+
+	border:3px solid #fff;
+
+	color:#e9292a;
+	text-decoration: none;
+	font-size: 21px;
+}
+.contacts p{
+	font-size: 14px;
+	color: #32425c;
+}
+.user-block{
+	margin-left: 660px;
+	font-size: 0;
+}
+.user-block a{
+	display: inline-block;
+	padding: 15px 25px;
+	background-color: #fff;
+	text-decoration: none;
+	color: #000;
+	font-size: 21px;
+}
+.login{
+	width:50px;
+	padding-left: 45px;/*почему-то не сработал*/
+	
+}
+.registration{
+	width:100px;
+	margin-left: 10px;
+
+}
+.menu-in-header{
+	background-color: #32425c;
+	padding-left: 20px;
+}
+
+.menu li{
+	display:inline-block;
+}
+
+.menu a{
+	display:inline-block;
+	padding:20px 30px;
+
+	text-decoration: none;
+	color:#fff;
+	font-size: 17px;
+
+}
+
+.container{
+  	width: 940px;
+ 	margin: 0 auto;
+
+ 	background-color: rgba(250,0,0,0.2)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.status-bar,
+.main-footer-footer{
+	background-color: #293449;
+}
+.main-header-container,
+.services{
+	background-color: #f1f5f7;
+}
+
+.main-footer-header,
+.main-footer-container{
+	background-color: #32425c;
 }
