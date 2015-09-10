@@ -312,14 +312,47 @@ input[name="toggle"]{
 	font-size: 30px;
 	margin-bottom: 35px;
 }
-
 .delivery-info,
 .guarantee-info,
 .credit-info{
 	width: 300px;
 }
-
-
+.info{
+	padding-top: 80px;
+	padding-bottom: 86px;
+}
+.info-title{
+	font-size: 30px;
+	margin-bottom: 35px;
+}
+.about-company{
+	float:left;
+	width: 530px;
+}
+.about-company-first{
+	margin-bottom: 35px;
+}
+.about-company-second{
+	margin-bottom: 28px;
+}
+.transport-companies li{
+	margin-bottom:25px;
+}
+.transport-companies li:last-child{
+	margin-bottom:35px;
+}
+.maps{
+	width:300px;
+	margin-left: 640px;
+}
+.maps-info{
+	width: 190px;
+	margin-bottom: 35px;
+}
+.map{
+	display: block;
+	margin-bottom: 40px;
+}
 
 .main-footer-header,
 .main-footer-container{
