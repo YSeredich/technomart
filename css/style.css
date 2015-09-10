@@ -353,11 +353,28 @@ input[name="toggle"]{
 	display: block;
 	margin-bottom: 40px;
 }
-
 .main-footer-header,
 .main-footer-container{
 	background-color: #32425c;
 }
 .main-footer-footer{
 	background-color: #293449;
+}
+.shop-copyright{
+	float:left;
+	widht:250px;
+}
+.social{
+	float: left;
+	width: 300px;
+	margin-left: 80px;
+}
+.feedback{
+	float: left;
+	width:160px;
+	margin-left: 20px;
+}
+.web-copyright{
+	width: 150px
+	margin-left: 20px;
 }
