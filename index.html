@@ -62,7 +62,23 @@
 		</header>
 		<main class="main-container">
 			<section class="promo container clearfix">
-				<div class="promo-slider">
+					<div class="promo-item promo-item-1">
+						<div class="flag">new</div>
+						Материалы
+						<a href="#">На любой вкус</a>
+					</div>
+					<div class="promo-item promo-item-2">
+						<div class="flag">new</div>
+						<!-- display:none; ect -->
+						Инструмент
+						<a href="#">На все случаи</a>
+					</div>
+					<div class="promo-item promo-item-3">
+						<div class="flag">new</div>
+						Техника
+						<a href="#">Для стройки</a>
+					</div>
+					<div class="promo-slider">
 					<div class="slider__item item-drill">
 						<div class="slider__item-desc">
 							<div class="slider__item-title">Дрели</div>
@@ -79,46 +95,28 @@
 					</div>
                 	<input type="radio" id="btn-1" name="toggle">
                 	<input type="radio" id="btn-2" name="toggle" checked>
-                	<label for="btn-1"></label>
-                    <label for="btn-2"></label>                	
+                	<label class="toggle" for="btn-1"></label>
+                    <label class="toggle" for="btn-2"></label>                	
                 	<div class="slider-controls">
-                    	<a class="prev" href="#">&lt;</a>
-                    	<a class="next" href="#">&gt;</a>
+                    	<a class="controls prev" href="#">&lt;</a>
+                    	<a class="controls next" href="#">&gt;</a>
                 	</div> 
                 	<a class="open-catalog btn">Открыть каталог</a>
-				</div>
-				<div class="promo-items"> 
-					<div class="promo-item item-1">
-						<div class="flag">new</div>
-						Материалы
-						<a href="#">На любой вкус</a>
 					</div>
-					<div class="promo-item item-2">
-						<div class="flag">new</div>
-						<!-- display:none; ect -->
-						Инструмент
-						<a href="#">На все случаи</a>
-					</div>
-					<div class="promo-item item-3">
-						<div class="flag">new</div>
-						Техника
-						<a href="#">Для стройки</a>
-					</div>
-					<div class="promo-item item-4">
+					<div class="promo-item promo-item-4">
 						<div class="flag">new</div>
 						Скидки 50%
 						<a href="#">На 150 товаров</a>
 					</div>
-					<div class="promo-item item-5">
+					<div class="promo-item promo-item-5">
 						<div class="flag">new</div>
 						Доставка
 						<a href="#">Бесплатно</a>
 					</div>
-				</div>
 			</section>
 			<section class="popular container">
 				<section class="popular-product">
-					<div class="title">
+					<div class="popular-title">
 						<h2>Популярные товары:</h2>
 						<a class="btn" href="#">Все популярные товары</a>
 					</div>
@@ -171,47 +169,47 @@
 					</div>
 				</section>
 				<section class="popular-manufacturer">
-					<div class="title">
+					<div class="popular-title">
 						<h2>Популярные производители:</h2>
 						<a class="btn" href="#">Все производители</a>
 					</div>
-					<div class="items">						
-							<div>
+					<div class="brands">						
+							<div class="brand">
 								<a class="manufacturer-logo" href="#">
 									<img src="img/brand_bosch.png" alt="BOSCH" width="126" height="37">
 								</a>
 							</div>
-							<div>
+							<div class="brand">
 								<a class="manufacturer-logo" href="#">
 									<img src="img/brand_Makita.png" alt="Makita" width="123" height="40">
 								</a>
 							</div>
-							<div>
+							<div class="brand">
 								<a class="manufacturer-logo" href="#">
 									<img src="img/brand_DeWALT.png" alt="DeWALT" width="146" height="44">
 								</a>
 							</div>
-							<div>
+							<div class="brand">
 								<a class="manufacturer-logo" href="#">
 									<img src="img/brand_interskol.png" alt="Интерскол" width="200" height="88">
 								</a>
 							</div>
-							<div>
+							<div class="brand">
 								<a class="manufacturer-logo" href="#">
 									<img src="img/brand_HITACHI.png" alt="HITACHI" width="169" height="31">
 								</a>
 							</div>
-							<div>
+							<div class="brand">
 								<a class="manufacturer-logo" href="#">
 									<img src="img/brand_LG.png" alt="LG" width="121" height="73">
 								</a>
 							</div>
-							<div>
+							<div class="brand">
 								<a class="manufacturer-logo" href="#">
 									<img src="img/brand_AEG.png" alt="AEG" width="151" height="96">
 								</a>
 							</div>
-							<div>
+							<div class="brand">
 								<a class="manufacturer-logo" href="#">
 									<img src="img/brand_metabo.png" alt="metabo" width="204" height="69">
 								</a>
@@ -221,33 +219,33 @@
 			</section>
 			<section class="services">
 				<div class="container">
-					<h2>Сервисы</h2>
-					<p class="short-info">
+					<h2 class="services-title">Сервисы</h2>
+					<p class="services-info">
 						Хороший интернет-магазин отличается от плохого не только ценами! <br>
 						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 					</p>
 					<div class="services-slider clearfix">
-						<div class="slider-controls">
-							<a class="delivery" href="#">Доставка</a>
-							<a class="guarantee" href="#">Гарантия</a>
-							<a class="credit" href="#">Кредит</a>
+						<div class="services-slider-controls">
+							<a class="delivery-controls" href="#">Доставка</a>
+							<a class="guarantee-controls" href="#">Гарантия</a>
+							<a class="credit-controls" href="#">Кредит</a>
 						</div>
 						<div class="slider-inner">
 							<div class="delivery">
-								<div class="title">Доставка</div>
-								<p class="short-info"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду бесплатно!<br>
+								<div class="delivery-title">Доставка</div>
+								<p class="delivery-info"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду бесплатно!<br>
 								Ведь мы неплохо заработаем, поднимая его на ваш этаж!
 								</p>
 							</div>
 							<div class="guarantee">
-								<div class="title">Гарантия</div>
-								<p class="short-info"> Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+								<div class="guarantee-title">Гарантия</div>
+								<p class="guarantee-info"> Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
 								Дом уж восстановите как-нибудь сами.
 								</p>
 							</div>
 							<div class="credit">
-								<div class="title">Кредит</div>
-								<p class="short-info"> Залезть в долговую яму стало проще!<br>
+								<div class="credit-title">Кредит</div>
+								<p class="credit-info"> Залезть в долговую яму стало проще!<br>
 								Кредитные консультанту придут вам на помощь.
 								<a class="btn">Отправить заявку</a>
 								</p>
@@ -341,11 +339,11 @@
 					</div>
 					<div class="feedback">
 						<p>Обратная связь:</p>
-          				<a href="#" class="btn">mail@htmlacademy.ru</a>
+          				<a href="#" class="retouch">mail@htmlacademy.ru</a>
 					</div>
 					<div class="web-copyright">
 						<p>Разработано:</p>
-          				<a href="#" class="btn">htmlacademy.ru</a>
+          				<a href="#" class="copy">htmlacademy.ru</a>
 					</div>
 				</div>
 			</div>

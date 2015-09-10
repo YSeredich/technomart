@@ -1,7 +1,6 @@
 body{
 	margin: 0;
    	padding: 0;
-	min-width: 1200px;
 
 	font-size: 13px;
 	line-height: 24px;
@@ -13,9 +12,19 @@ body{
   display: table;
   clear: both;
 }
+
+.btn{
+	display: block;
+	width:200px;/*для разметки*/
+	padding:12px 10px;
+
+	color:#fff;
+	text-decoration: none;
+	background-color: #ee3643;
+	border-radius: 5px;
+}
+
 h2{
-
-
 	font-size: 30px;
 	text-transform: uppercase;
 }
@@ -129,39 +138,38 @@ input[type="search"]{
 	display:none;
 }
 .promo-item{
+	float: left;
 	width:300px;
 	height:123px;
 	margin-bottom: 20px;
+	margin-left: 20px;
 
 	color:#fff;
 	font-size: 24px;
 	font-weight: bold;
 }
-.item a{
+.promo-item a{
 	color:#fff;
 	text-decoration: none;
 }
-.item-1{
-	float:left;
+.promo-item-1{
 	background:#f6b22d;
+	margin-left: 0;
 }
-.item-2{
-	float:left;
-	margin-left: 20px;
+.promo-item-2{
 	background:#4aafde;
+
 }
-.item-3{
-	float:left;
-	margin-left: 20px;
+.promo-item-3{
 	background:#cc79d1;
+
 }
-.item-4{
-	float:right;
+.promo-item-4{
 	background:#85d179;
 }
-.item-5{
-	float:right;
+.promo-item-5{
 	background:#f6b22d;
+	margin-bottom: 0;
 }
 .item-perforator{
 	display:none;
@@ -171,82 +179,147 @@ input[type="search"]{
 	position:relative;
 	width:620px;
 	height:266px;
-	margin-top: 200px;
-
-	background-color: rgba(0,250,0,0.2);/*для наглядности*/
 }
-.btn{
-	display: block;
-	width:200px;/*для разметки*/
-	padding:12px 50px;
-
+.slider__item-title,
+.slider__item-slogan{
+	position: absolute;
+	left:25px;
 	color:#fff;
-
-	background-color: #ee3643;
+}
+.slider__item-title{
+	top:25px;
+	font-size: 36px;
+}
+.slider__item-slogan{
+	top:65px;
+	font-size: 18px;
+}
+.toggle{
+	position: absolute;
+}
+input[name="toggle"]{
+	display:none;
+}
+.controls{
+	position: absolute;
+	top:110px;
+	font-size: 45px;/*тут не то немного пока, когда разберусь с подключением иконочных шрифтов сделаю как надо*/
+	color:#fff;
+	text-decoration: none;
+}
+.prev{
+	left: 25px;
+}
+.next{
+	right: 25px;
+}
+.open-catalog{
+	position: absolute;
+	left: 25px;
+	bottom: 22px;
+	width: 195px;
 }
 .actions{
 	display:none;
 }
 .items-product{
 	font-size: 0;
+	margin-bottom: 21px;
 }
-
 .item{
 	display: inline-block;
 	margin-right: 20px;
-	width:220px;
+	width:218px;
 	height:320px;
 
 	vertical-align: middle;
 	font-size: 18px;
 	font-family: 'PT Sans', 'Arial', sans-serif;
 
-
+	border:1px solid #e5e5e5;
 	background-color: rgba(0,0,250,0.2);
 }
-
 .item:last-child{
 	margin-right: 0;
 }
-.title{
-	background-color: #f7f3ec;
+.popular-title{
+
 	padding:26px 24px;
 	margin-bottom: 20px;
-}
 
-.title h2{
+	background-color: #f7f3ec;	
+}
+.popular-title h2{
 	float: left;
 }
-.title .btn{
+.popular-title .btn{
 	margin-left: 663px;/*не получается поставить как надо*/
 	widht:253px;
-
 }
-.items{
+.brands{
 	font-size: 0;
 }
-.items div{
+.brand{
 	display: inline-block;
-	width:220px;
+	width:218px;
 	height:145px;
 	margin-right: 20px;
 	margin-bottom: 20px;
 	vertical-align: middle;
+	border:1px solid #e5e5e5;
 
 	background-color: rgba(0,0,250,0.2);
 }
-
-.item div:nth-child(4n){/*не пойму чего они не стали как надо, вроде все ровно 4*220+3*20=940*/ 
+.brand:nth-child(4n){ 
 	margin-right: 0;
 }
-
-
-
-
-
 .services{
+	padding-top: 65px;
+	padding-bottom: 100px;
+
 	background-color: #f1f5f7;
 }
+.services-title{
+	margin-bottom: 35px;
+}
+.services-info{
+	margin-bottom: 45px;
+}
+.services-slider-controls{
+	float:left;
+}
+.services-slider-controls a{
+	display: block;
+	width: 217px;
+	height: 60px;
+	padding-left: 23px;
+
+	color: #fff;
+	text-decoration: none;
+
+	background-color: #32425c;
+}
+.slider-inner{
+	margin-left: 320px;
+}
+.guarantee,
+.credit{
+	display: none;
+}
+.delivery-title,
+.guarantee-title,
+.credit-title{
+	font-size: 30px;
+	margin-bottom: 35px;
+}
+
+.delivery-info,
+.guarantee-info,
+.credit-info{
+	width: 300px;
+}
+
+
 
 .main-footer-header,
 .main-footer-container{
