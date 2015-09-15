@@ -15,7 +15,7 @@ body {
 
 .btn {
 	display: block;
-	width:200px;/*для разметки*/
+	width:200px;
 	padding:12px 10px;
 
 	color:#fff;
@@ -55,7 +55,7 @@ h1 {
 	font-weight:bold;	
 	color: #fff;
 	text-decoration: none;
-	font-size: 24px;	/*мне кажется он какой-то маленький*/
+	font-size: 24px;	
 
 	background-color: #ee3643;
 	box-shadow:0 5px #b52933;
@@ -125,7 +125,7 @@ input[type="search"]{
 }
 .login{
 	width:50px;
-	padding-left: 45px;/*почему-то не сработал*/	
+	padding-left: 45px;
 }
 .registration{
 	width:100px;
@@ -236,13 +236,10 @@ input[type="search"]{
 .slider-toggle{
 	position: absolute;
 }
-input[name="slider-toggle"]{
-	display:none;
-}
 .controls{
 	position: absolute;
 	top:110px;
-	font-size: 45px;/*тут не то немного пока, когда разберусь с подключением иконочных шрифтов сделаю как надо*/
+	font-size: 45px;
 	color:#fff;
 	text-decoration: none;
 }
@@ -281,7 +278,7 @@ input[name="slider-toggle"]{
 	font-family: 'PT Sans', 'Arial', sans-serif;
 
 	border:1px solid #e5e5e5;
-	background-color: rgba(0,0,250,0.2);
+
 }
 .index-item:last-child{
 	margin-right: 0;
@@ -297,8 +294,7 @@ input[name="slider-toggle"]{
 	float: left;
 }
 .popular-title .btn{
-	margin-left: 663px;/*не получается поставить как надо*/
-	widht:253px;
+	margin-left: 663px;
 }
 .brands{
 	font-size: 0;
@@ -311,8 +307,6 @@ input[name="slider-toggle"]{
 	margin-bottom: 20px;
 	vertical-align: middle;
 	border:1px solid #e5e5e5;
-
-	background-color: rgba(0,0,250,0.2);
 }
 .brand:nth-child(4n){ 
 	margin-right: 0;
