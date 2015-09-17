@@ -1,3 +1,85 @@
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'symbols-technomart';
+  src: url('../font/symbols-technomart.eot?22619757');
+  src: url('../font/symbols-technomart.eot?22619757#iefix') format('embedded-opentype'),
+       url('../font/symbols-technomart.woff?22619757') format('woff'),
+       url('../font/symbols-technomart.ttf?22619757') format('truetype'),
+       url('../font/symbols-technomart.svg?22619757#symbols-technomart') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-technomart';
+    src: url('../font/symbols-technomart.svg?22619757#symbols-technomart') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-technomart";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-left:before { content: '\3c'; } /* '&lt;' */
+.icon-right:before { content: '\3e'; } /* '&gt;' */
+.icon-basket:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-vk:before { content: '\76'; } /* 'v' */
+.icon-up:before { content: '\2c4'; } /* '˄' */
+.icon-down:before { content: '\2c5'; } /* '˅' */
+.icon-left-big:before { content: '\2190'; } /* '←' */
+.icon-right-big:before { content: '\2192'; } /* '→' */
+.icon-login:before { content: '\2386'; } /* '⎆' */
+.icon-logout:before { content: '\241b'; } /* '␛' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-circle:before { content: '\25cb'; } /* '○' */
+.icon-circle-dot:before { content: '\25cf'; } /* '●' */
+.icon-star:before { content: '\2605'; } /* '★' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-youtube:before { content: '\f39e'; } /* '' */
+.icon-home:before { content: '🏠'; } /* '\1f3e0' */
+.icon-user:before { content: '👨'; } /* '\1f468' */
+.icon-phone:before { content: '📞'; } /* '\1f4de' */
+.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
+.icon-search:before { content: '🔍'; } /* '\1f50d' */
+.icon-bookmark:before { content: '🔖'; } /* '\1f516' */
+
+
 body {
 	margin: 0;
    	padding: 0;
@@ -61,7 +143,8 @@ h1 {
 	box-shadow:0 5px #b52933;
 }
 input[type="search"]{
-	margin-left:45px;
+	margin-left:5px;
+	background-color: #32425c;
 	/*width:270px;*/
 }
 .status-bar {	
@@ -70,7 +153,7 @@ input[type="search"]{
 }
 .status-bar-links a{
 	display:inline-block;
-	padding:10px 30px;
+	padding:10px 20px;
 
 	color:#fff;
 	text-decoration: none;
@@ -92,11 +175,11 @@ input[type="search"]{
 }
 .contacts{
 	float:left;
-	margin-left:19px;
+	margin-left:10px;
 }
 .contacts a{
 	display: block;
-	padding-left: 67px;
+	padding-left: 10px;
 	width:197px;
 
 	border:3px solid #fff;
@@ -110,7 +193,7 @@ input[type="search"]{
 	color: #32425c;
 }
 .user-block{
-	margin-left: 660px;
+	margin-left: 600px;
 	font-size: 0;
 }
 .login,
@@ -124,8 +207,7 @@ input[type="search"]{
 	font-size: 21px;
 }
 .login{
-	width:50px;
-	padding-left: 45px;
+
 }
 .registration{
 	width:100px;
@@ -464,6 +546,14 @@ input[type="text"] {
 
 	background-color:#f7f3ec;
 }
+.manufacturer-filter{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 25px;
+}
+.power-filter{
+	margin-bottom: 70px;
+}
 input[type="checkbox"],
 input[type="radio"] {
 	display: none;
@@ -474,14 +564,34 @@ label {
 	font-size: 15px;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
+	cursor: pointer;
 }
-.manufacturer-filter{
-	padding-bottom: 15px;
-	border-bottom: 1px solid #e5e5e5;
-	margin-bottom: 25px;
+
+.input[type="checkbox"]+label::before {
+	content: '\2610';
+	font-family: "symbols-technomart";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 15px;
+	color:#000;
 }
-.power-filter{
-	margin-bottom: 70px;
+
+.input[type="checkbox"]:checked+label::before {
+	content: '\2611';
+}
+.input[type="radio"]+label::before {
+	content: '\25cb';
+	font-family: "symbols-technomart";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 15px;
+	color:#000;
+}
+
+.input[type="radio"]:checked+label::before {
+	content: '\25cf';
 }
 .sort-title {
 	float:left;
@@ -524,6 +634,11 @@ label {
 	float: left;
 	width: 300px;
 	margin-left: 80px;
+
+}
+
+.social-btn {
+	color:#fff;
 }
 .feedback{
 	float: left;
@@ -534,3 +649,5 @@ label {
 	width: 150px
 	margin-left: 20px;
 }
+
+
