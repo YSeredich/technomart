@@ -475,7 +475,7 @@ h1 {
 	margin-right: 20px;
 	margin-bottom: 20px;
 	width:218px;
-	height:320px;
+	height:318px;
 
 	vertical-align: middle;
 
@@ -494,6 +494,7 @@ h1 {
 	right: -1px;
 }
 .item-image {
+	position: relative;
 	width: 218px;
 	height: 148px;
 	padding-top: 20px; 
@@ -501,6 +502,9 @@ h1 {
 }
 .item-image img{
 	max-width: 100%;
+	margin:auto;
+	position: absolute;
+	top:0; left: 0; bottom: 0; right: 0;
 }
 .item-title {
 	margin-top: 10px;
@@ -520,7 +524,7 @@ h1 {
 	position: relative;
 	width: 80px;
 	margin: 0 auto 20px;
-	padding: 10px 30px;
+	padding: 7px 30px;
 
 	color: #fff;
 	font-size: 17px;
@@ -545,8 +549,9 @@ h1 {
 }
 .brand{
 	display: inline-block;
+	position: relative;
 	width:218px;
-	height:145px;
+	height:144px;
 	margin-right: 20px;
 	margin-bottom: 20px;
 	vertical-align: middle;
@@ -554,6 +559,11 @@ h1 {
 }
 .brand:nth-child(4n){ 
 	margin-right: 0;
+}
+.manufacturer-logo img{
+	margin:auto;
+	position: absolute;
+	top:0; left: 0; bottom: 0; right: 0;
 }
 /*services index*/
 
