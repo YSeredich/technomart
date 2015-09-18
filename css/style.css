@@ -96,10 +96,14 @@ body {
 .btn {
 	display: block;
 	width:200px;
-	padding:12px 10px;
+	padding:7px 0px;
 
 	color:#fff;
 	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+
 	background-color: #ee3643;
 	border-radius: 5px;
 }
@@ -239,9 +243,8 @@ h1 {
 	background-color: #fff;
 }
 .login {
-	width:79px;
-	padding-left:15px;
-	padding-right: 27px;
+	width:121px;
+	text-align: center;
 }
 .registration {
 	width:100px;
@@ -281,49 +284,87 @@ h1 {
 	padding:25px 15px;
 	font-size: 13px;
 }
-/*promo index*/
-
+/*promo items index*/
 .promo{
 	margin-bottom: 53px;
 	padding-top: 59px;
 }
-.flag{
+.promo-flag{
 	display:none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+	width: 60px;
+	height: 59px;
+
+	background-image: url('../img/promo_flag.png') no-repeat;
+}
+.promo-flag:first-child {
+	display: block;
 }
 .promo-item{
 	float: left;
-	width:300px;
-	height:123px;
+	position:relative;
 	margin-bottom: 20px;
 	margin-left: 20px;
 
+	width:277px;
+	height:96px;
+	padding-left: 23px;
+	padding-top: 27px;
+	
 	color:#fff;
 	font-size: 24px;
 	font-weight: bold;
 }
 .promo-item a{
+	display: block;
+	margin-top: 15px;
+	margin-left: 2px;
+
+	width: 135px;
+	padding: 8px 0;
+
+	font-size: 14px;
+	text-transform:  uppercase;
 	color:#fff;
 	text-decoration: none;
+	text-align: center;
+
+	border-radius: 2px;
 }
 .promo-item-1{
-	background:#f6b22d;
 	margin-left: 0;
+	background: #f6b22d url('../img/promo_1.png') no-repeat 213px 31px;
+}
+.promo-item-1 a,
+.promo-item-5 a {
+	background:#dda028;
 }
 .promo-item-2{
-	background:#4aafde;
-
+	background:#4aafde url('../img/promo_2.png') no-repeat 197px 33px;
+}
+.promo-item-2 a {
+	background:#429dc7;
 }
 .promo-item-3{
-	background:#cc79d1;
-
+	background:#cc79d1 url('../img/promo_3.png') no-repeat 191px 31px;
+}
+.promo-item-3 a{
+	background:#b76dbc;
 }
 .promo-item-4{
-	background:#85d179;
+	background:#85d179 url('../img/promo_4.png') no-repeat 196px 26px;
+}
+.promo-item-4 a{
+	background:#77bc6d;
 }
 .promo-item-5{
-	background:#f6b22d;
+	background:#f6b22d url('../img/promo_5.png') no-repeat 191px 33px;
 	margin-bottom: 0;
 }
+/*promo slider index*/
 .item-perforator{
 	display:none;
 }
@@ -337,11 +378,14 @@ h1 {
 .slider__item-slogan{
 	position: absolute;
 	left:25px;
+
 	color:#fff;
 }
 .slider__item-title{
-	top:25px;
+	top:30px;
+
 	font-size: 36px;
+	text-transform: uppercase;
 }
 .slider__item-slogan{
 	top:65px;
@@ -352,16 +396,16 @@ h1 {
 }
 .controls{
 	position: absolute;
-	top:110px;
+	top:113px;
 	font-size: 45px;
 	color:#fff;
 	text-decoration: none;
 }
 .prev{
-	left: 25px;
+	left: 7px;
 }
 .next{
-	right: 25px;
+	right: 2px;
 }
 .open-catalog{
 	position: absolute;
