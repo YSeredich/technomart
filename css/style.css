@@ -546,6 +546,7 @@ h1 {
 /*brands*/
 .brands{
 	font-size: 0;
+	margin-bottom: 65px;
 }
 .brand{
 	display: inline-block;
@@ -566,35 +567,67 @@ h1 {
 	top:0; left: 0; bottom: 0; right: 0;
 }
 /*services index*/
-
 .services{
 	padding-top: 65px;
-	padding-bottom: 100px;
-
 	background-color: #f1f5f7;
 }
 .services-title{
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
 .services-info{
-	margin-bottom: 45px;
+	margin-bottom: 70px;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
-.services-slider-controls{
+/*services slider*/
+.services-slider-controls {
 	float:left;
+	position: relative;
 }
-.services-slider-controls a{
+.services-slider-controls::after {
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 272px;
+	right: 0;
+	top:-40px;
+	background-image: url('../img/services_line.png');
+}
+.services-slider-controls a {
 	display: block;
 	width: 217px;
-	height: 60px;
+	height: 43px;
 	padding-left: 23px;
+	padding-top: 17px;
 
 	color: #fff;
 	text-decoration: none;
+	font-size: 21px;
+	font-weight: bold;
 
+	border-top: 1px solid #405069;
+	border-bottom: 1px solid #293449; 
 	background-color: #32425c;
 }
-.slider-inner{
+.services-slider-controls .active {
+	color: #32425c;
+	background-color: #fff;
+	border: none;
+}
+.slider-inners{
 	margin-left: 320px;
+	padding-top: 5px;
+}
+.slider-inner {
+	padding-bottom: 130px;
+}
+.delivery {
+	background: url('../img/services_delivery.png') no-repeat 150px 20px;
+}
+.guarantee {
+	background: url('../img/services_guarantee.png') no-repeat 150px 20px;
+}
+.credit {
+	background: url('../img/services_credit.png') no-repeat 150px 20px;
 }
 .guarantee,
 .credit{
@@ -603,14 +636,21 @@ h1 {
 .delivery-title,
 .guarantee-title,
 .credit-title{
-	font-size: 30px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
+
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #32425c;
 }
 .delivery-info,
 .guarantee-info,
 .credit-info{
-	width: 300px;
+	width: 280px;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
+
+
+
 
 /*info index*/
 
@@ -681,7 +721,6 @@ h1 {
 	padding-left: 18px;
 	border-radius: 2px;
 
-	font-size: 13px;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 
