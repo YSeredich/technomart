@@ -120,7 +120,7 @@ h1 {
 /*header*/
 /*header 1*/
 .main-header-container{
-	padding-bottom: 60px;
+	padding-bottom: 65px;
 	background-color: #f1f5f7;
 }
 .status-bar {	
@@ -181,13 +181,14 @@ h1 {
 }
 
 /*header2*/
-.header-info {	padding-top: 45px; }
+.header-info {	
+	padding-top: 46px; 
+	padding-left: 51px;
+	padding-bottom: 38px;
+}
 .short-info {
 	float: left;
 	width:200px;
-	margin:50px;
-	margin-bottom: 40px;
-	margin-top: 5px;
 
 	font-style: italic;
 	color:#ee3643;
@@ -195,71 +196,82 @@ h1 {
 }
 .contacts{
 	float:left;
-	margin-left:10px;
+	margin-left:70px;
 }
 .contacts a{
 	display: block;
-	padding-left: 10px;
-	width:197px;
-
-	border:3px solid #fff;
+	margin-bottom: 3px;
+	padding:8px;
+	padding-left:10px;	
+	padding-right: 50px;
 
 	color:#e9292a;
 	text-decoration: none;
 	font-size: 21px;
+
+	border:3px solid #fff;
+}
+.contacts i {
+	margin-right: 25px;
+	color: #b7bfc8;
+	font-size: 22px;
 }
 .contacts p{
+	margin-left: 10px;
 	font-size: 14px;
 	color: #32425c;
 }
 .user-block{
-	margin-left: 600px;
+	margin-left: 607px;
 	font-size: 0;
 }
 .login,
 .registration,
 .user-name{
 	display: inline-block;
-	padding: 15px 25px;
-	background-color: #fff;
+	padding-top: 11px;
+	padding-bottom: 10px;
+	
 	text-decoration: none;
 	color: #000;
 	font-size: 21px;
-}
-.login{
 
+	background-color: #fff;
 }
-.registration{
+.login {
+	width:79px;
+	padding-left:15px;
+	padding-right: 27px;
+}
+.registration {
 	width:100px;
 	margin-left: 10px;
+	padding-left:25px;
+	padding-right: 25px;
 }
-
 .user-block-links {
 	font-size: 16px;
 	line-height: 18px;
 }
 /*header3*/
-.menu-in-header{
-	background-color: #32425c;
+.menu-in-header {
 	padding-left: 20px;
 	box-shadow:0 5px #293449;
+	background-color: #32425c;
 }
-.menu li{	display:inline-block; }
-.menu a{
+.menu li {	display:inline-block; }
+.menu a {
 	display:inline-block;
-	padding:20px 30px;
+	padding:15px 30px;
 
 	text-decoration: none;
 	color:#fff;
 	font-size: 17px;
 }
-
 /*breadcrums catalog*/
-
 .breadcrumbs {
 	font-size: 0px;
 }
-
 .breadcrumbs a,
 .breadcrumbs span{
 	display: inline-block;
@@ -269,11 +281,11 @@ h1 {
 	padding:25px 15px;
 	font-size: 13px;
 }
-
 /*promo index*/
 
 .promo{
 	margin-bottom: 53px;
+	padding-top: 59px;
 }
 .flag{
 	display:none;
