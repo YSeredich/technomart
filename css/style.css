@@ -648,62 +648,69 @@ h1 {
 	width: 280px;
 	font-family: "PT Sans", "Arial", sans-serif;
 }
-
-
-
-
 /*info index*/
-
 .index-info{
 	padding-top: 80px;
 	padding-bottom: 86px;
 }
-.index-info-title{
-	font-size: 30px;
-	margin-bottom: 35px;
-}
 .about-company{
 	float:left;
 	width: 530px;
+	font-family: "PT Sans", "Arial", sans-serif;
+}
+.index-info-title{
+	margin-bottom: 30px; 
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;	
 }
 .about-company-first{
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 }
 .about-company-second{
-	margin-bottom: 28px;
+	margin-bottom: 20px;
 }
 .transport-companies li{
-	margin-bottom:25px;
+	margin-bottom:15px;
+	padding-left: 36px;
+	font-size: 18px;
+	font-family: "Cuprum", "Arial", sans-serif;
+}
+.transport-companies li::before {/*не выходят красные линии*/
+	content: "";
 }
 .transport-companies li:last-child{
 	margin-bottom:35px;
 }
-.maps{
+.about-company-btn {
+	width: 220px;
+	font-family: "Cuprum", "Arial", sans-serif;
+}
+.maps {
 	width:300px;
 	margin-left: 640px;
 }
-.maps-info{
+.maps-info {
 	width: 190px;
-	margin-bottom: 35px;
+	margin-bottom: 32px;
 }
-.map{
+.map {
 	display: block;
-	margin-bottom: 40px;
+	margin-bottom: 32px;
 }
-
+.map-btn {
+	width: 300px;
+}
 /*catalog-info*/
 .catalog-info {
 	background-color: #f2f6f8;
 	padding:70px 0;
 }
-
 .catalog-info-title {
 	font-size: 30px;
 	text-transform: uppercase;
 }
-
 /*catalog columns*/
-
 .filters-column {
 	float: left;
 	width:220px;
@@ -713,7 +720,6 @@ h1 {
 	margin-left: 20px;
 	width: 700px;
 }
-
 .filters-column-title,
 .sort {
 	margin-bottom: 20px;
@@ -723,7 +729,6 @@ h1 {
 
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
-
 	background-color:#f7f3ec;
 }
 .range-filter-title,
@@ -754,7 +759,6 @@ input[type="text"] {
 
 	font-size: 17px;
 	font-family: "PT Sans", Arial, sans-serif;
-
 	background-color:#f7f3ec;
 }
 .manufacturer-filter{
@@ -777,7 +781,6 @@ label {
 	text-transform: uppercase;
 	cursor: pointer;
 }
-
 input[type="checkbox"]+label::before {
 	content: '\2610';
 	font-family: "symbols-technomart";
@@ -787,7 +790,6 @@ input[type="checkbox"]+label::before {
 	font-size: 15px;
 	color:#000;
 }
-
 input[type="checkbox"]:checked+label::before {
 	content: '\2611';
 }
@@ -800,7 +802,6 @@ input[type="radio"]+label::before {
 	font-size: 15px;
 	color:#000;
 }
-
 input[type="radio"]:checked+label::before {
 	content: '\25cf';
 }
@@ -827,7 +828,6 @@ input[type="radio"]:checked+label::before {
 	text-align: center;
 	vertical-align: middle;
 }
-
 /*footer*/
 
 .main-footer-header,
@@ -845,9 +845,7 @@ input[type="radio"]:checked+label::before {
 	float: left;
 	width: 300px;
 	margin-left: 80px;
-
 }
-
 .social-btn {
 	color:#fff;
 }
