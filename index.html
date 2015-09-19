@@ -14,10 +14,13 @@
 				<div class="container clearfix">
 					<div class="logo"><a href="#">Техномарт</a></div>
 					<div class="status-bar-links">						
-						<a href="#"><i class="icon-search"></i><input class="search" type="search" placeholder="Поиск:"></a>
-						<a href="#"><i class="icon-bookmark"></i>Закладки:0</a> 
-						<a href="#"><i class="icon-basket"></i>Корзина:0</a>
-						<a class="order" href="#">Оформить заказ</a>
+						<div class="search-wrap">
+							<input class="search" type="search" placeholder="Поиск:">
+							<a href="#" class="icon-search search-btn"></a>
+						</div>
+						<a class="status-bar-link" href="#"><i class="icon-bookmark"></i>Закладки:0</a> 
+						<a class="status-bar-link" href="#"><i class="icon-basket"></i>Корзина:0</a>
+						<a class="status-bar-link order" href="#">Оформить заказ</a>
 					</div>
 				</div>
 			</div>
@@ -230,8 +233,9 @@
 						<div class="slider-inners">
 							<div class="delivery slider-inner">
 								<div class="delivery-title">Доставка</div>
-								<p class="delivery-info"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду бесплатно!<br>
-								Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+								<p class="delivery-info"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+								Ведь мы неплохо заработаем, <br>
+								поднимая его на ваш этаж!
 								</p>
 							</div>
 							<div class="guarantee slider-inner">
@@ -346,13 +350,13 @@
 			</div>
 		</footer>
 		<div class="modal-content-map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.3230833!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1442660567939" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.3230833!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1442660567939" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
       		<button class="modal-content-close" title="Закрыть">Закрыть</button>
       		<div id="google-map"></div>
     	</div>
 		<script>
 			var mapOpen = document.querySelector(".open-map");
-			var mapPopup = document.querySelector("modal-content-map");
+			var mapPopup = document.querySelector(".modal-content-map");
 			var mapClose = mapPopup.querySelector(".modal-content-close");
 
 			mapOpen.addEventListener("click", function(event) {
