@@ -924,4 +924,36 @@ input[type="radio"]:checked+label::before {
 	margin-left: 48px;
 }
 
+.modal-content-map {
+  display: none;
 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  width: 940px;
+  height: 446px;
+  margin-left: -470px;
+  margin-top: -223px;
+  border: 7px solid white;
+
+  background: #e9e5dc url("../img/big_map.png");
+  box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 21px;
+  height: 21px;
+  border: 0;
+  outline: 0;
+
+  font-size: 0;
+  cursor: pointer;
+  background: url("../img/Cross.png") no-repeat center;
+}
+.modal-content-show {
+	display: block;
+}

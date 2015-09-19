@@ -267,7 +267,7 @@
 				<div class="maps">
 					<div class="index-info-title">Контакты</div>
 					<p class="maps-info">Вы можете забрать товар сами, заехав в наш офис:</p>
-					<a href="#" class="map">
+					<a href="#" class="map open-map">
 						<img src="img/map.png" alt="Большая Конюшенная ул., 19" width="300" height="158">
 					</a>
 					<a href="#" class="btn map-btn">Заблудились? Напишите нам!</a>
@@ -345,5 +345,33 @@
 				</div>
 			</div>
 		</footer>
+		<div class="modal-content-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.3230833!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1442660567939" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      		<button class="modal-content-close" title="Закрыть">Закрыть</button>
+      		<div id="google-map"></div>
+    	</div>
+		<script>
+			var mapOpen = document.querySelector(".open-map");
+			var mapPopup = document.querySelector("modal-content-map");
+			var mapClose = mapPopup.querySelector(".modal-content-close");
+
+			mapOpen.addEventListener("click", function(event) {
+        			event.preventDefault();
+        			mapPopup.classList.add("modal-content-show");
+      			});
+
+      		mapClose.addEventListener("click", function(event) {
+       				event.preventDefault();
+        			mapPopup.classList.remove("modal-content-show");
+      			});
+
+      		window.addEventListener("keydown", function(event) {
+        			if (event.keyCode == 27) {
+          			if (mapPopup.classList.contains("modal-content-show")) {
+            			mapPopup.classList.remove("modal-content-show");
+          				}
+        			}
+      			});
+		</script>
 	</body>
 </html>
