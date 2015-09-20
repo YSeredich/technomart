@@ -102,7 +102,7 @@
 									<div class="slider-item-title">Дрели</div>
 									<div class="slider-item-slogan">Соседям на радость!</div>
 									<img src="img/slider_2.jpg" alt="Дрели" width="620" height="266">
-									<a class="open-catalog btn">Открыть каталог</a>
+									<a href="catalog.html" class="open-catalog btn">Открыть каталог</a>
 								</div>
 							</div>
 
@@ -111,7 +111,7 @@
 									<div class="slider-item-title">Перфораторы</div>
 									<div class="slider-item-slogan">Настоящие мужские игрушки</div>
 									<img src="img/slider_1.jpg" alt="Перфораторы" width="620" height="266">
-									<a class="open-catalog btn">Открыть каталог</a>
+									<a href="catalog.html" class="open-catalog btn">Открыть каталог</a>
 								</div>
 							</div>
 						</div>
@@ -240,10 +240,13 @@
 						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 					</p>
 					<div class="services-slider clearfix">
+						<input type="radio" class="services-slider-toggle" id="serv-btn-1" name="serv-toggle" checked>
+						<input type="radio" class="services-slider-toggle" id="serv-btn-2" name="serv-toggle">
+						<input type="radio" class="services-slider-toggle" id="serv-btn-3" name="serv-toggle">
 						<div class="services-slider-controls">
-							<a class="delivery-controls active" href="#">Доставка</a>
-							<a class="guarantee-controls" href="#">Гарантия</a>
-							<a class="credit-controls" href="#">Кредит</a>
+							<label for="serv-btn-1" class="delivery-controls">Доставка</label>
+							<label for="serv-btn-2" class="guarantee-controls" href="#">Гарантия</label>
+							<label for="serv-btn-3" class="credit-controls" href="#">Кредит</label>
 						</div>
 						<div class="slider-inners">
 							<div class="delivery slider-inner">
@@ -263,7 +266,7 @@
 								<div class="credit-title">Кредит</div>
 								<p class="credit-info"> Залезть в долговую яму стало проще!<br>
 								Кредитные консультанту придут вам на помощь.
-								<a class="btn">Отправить заявку</a>
+								<a class="btn send-bid">Отправить заявку</a>
 								</p>
 							</div>
 						</div>

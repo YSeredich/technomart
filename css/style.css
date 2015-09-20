@@ -733,6 +733,13 @@ h1 {
 	font-family: "PT Sans", "Arial", sans-serif;
 }
 /*services slider*/
+.services-slider {
+	position: relative;
+}
+.services-slider-toggle {
+	position: absolute;
+	opacity: 0;
+}
 .services-slider-controls {
 	float:left;
 	position: relative;
@@ -746,7 +753,7 @@ h1 {
 	top:-40px;
 	background-image: url('../img/services_line.png');
 }
-.services-slider-controls a {
+.services-slider-controls label {
 	display: block;
 	width: 217px;
 	height: 43px;
@@ -762,16 +769,22 @@ h1 {
 	border-bottom: 1px solid #293449; 
 	background-color: #32425c;
 }
-.services-slider-controls .active {
+#serv-btn-1:checked ~ .services-slider-controls label[for="serv-btn-1"],
+#serv-btn-2:checked ~ .services-slider-controls label[for="serv-btn-2"],
+#serv-btn-3:checked ~ .services-slider-controls label[for="serv-btn-3"] {
 	color: #32425c;
 	background-color: #fff;
 	border: none;
 }
 .slider-inners{
+	width: 630px;
+	height: 281px;
+	overflow: hidden;
 	margin-left: 320px;
 	padding-top: 5px;
 }
 .slider-inner {
+	display: none;
 	padding-bottom: 130px;
 }
 .delivery {
@@ -782,10 +795,6 @@ h1 {
 }
 .credit {
 	background: url('../img/services_credit.png') no-repeat 150px 20px;
-}
-.guarantee,
-.credit{
-	display: none;
 }
 .delivery-title,
 .guarantee-title,
@@ -801,6 +810,18 @@ h1 {
 .credit-info{
 	width: 280px;
 	font-family: "PT Sans", "Arial", sans-serif;
+}
+.send-bid {
+	margin-top: 30px;
+}
+#serv-btn-1:checked ~ .slider-inners .delivery {
+	display: block;
+}
+#serv-btn-2:checked ~ .slider-inners .guarantee {
+	display: block;
+}
+#serv-btn-3:checked ~ .slider-inners .credit {
+	display: block;
 }
 /*info index*/
 .index-info{
