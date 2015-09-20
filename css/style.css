@@ -456,8 +456,8 @@ h1 {
 	background:#f6b22d url('../img/promo_5.png') no-repeat 191px 33px;
 	margin-bottom: 0;
 }
-/*promo slider index не переключается и нет кнопок*/
-.item-perforator{
+/*promo slider index*/
+.slider-item{
 	display:none;
 }
 .promo-slider {
@@ -466,18 +466,55 @@ h1 {
 	width:620px;
 	height:266px;
 }
-.slider__item-title,
-.slider__item-slogan{
+.promo-slider-toggle {
+	position: absolute;
+	opacity: 0;
+}
+.slider-radio-controls {
+	position: absolute;
+	bottom: 36px;
+	left: 50%;
+	width: 200px;
+	height: 10px;
+	margin-left: -100px;
+	text-align: center;
+	z-index: 1000;
+}
+.slider-radio-controls-lbl {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 5px;
+	background-color: #fff;
+	border: 2px solid #fff;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#btn-1:checked ~ .slider-controls .slider-radio-controls-lbl:nth-child(1),
+#btn-2:checked ~ .slider-controls .slider-radio-controls-lbl:nth-child(2) {
+	background-color: #ee3643;
+}
+.slider-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.slider-item-title,
+.slider-item-slogan{
 	position: absolute;
 	left:25px;
 	color:#fff;
 }
-.slider__item-title{
+.slider-item-title{
 	top:30px;
 	font-size: 36px;
 	text-transform: uppercase;
 }
-.slider__item-slogan{
+.slider-item-slogan{
 	top:65px;
 	font-size: 18px;
 }
@@ -502,6 +539,12 @@ h1 {
 	left: 25px;
 	bottom: 22px;
 	width: 195px;
+}
+#btn-1:checked ~ .promo-slides .item-drill { 
+    display: block;
+}
+#btn-2:checked ~ .promo-slides .item-perforator { 
+    display: block;
 }
 /*popular index*/
 .popular-title{
