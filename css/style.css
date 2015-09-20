@@ -1226,7 +1226,6 @@ input[type="radio"]:checked+label::before {
 	color: #fff;
 	margin-left: 48px;
 }
-
 .modal-content-map {
   display: none;
 
@@ -1255,6 +1254,74 @@ input[type="radio"]:checked+label::before {
   font-size: 0;
   cursor: pointer;
   background: url("../img/Cross.png") no-repeat center;
+}
+.modal-content-write-us {
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+
+	width: 620px;
+	margin-left: -310px;
+	margin-top: -215px;
+
+	color: #000;
+	font-size: 18px;
+
+	background-color: #fff;
+	border-top: 7px solid #ee3643;
+	box-shadow: 0 20px 40px rgba(0,0,0,0.75);
+	z-index: 10000;
+}
+.input-area {
+	padding: 38px 80px 37px;
+}
+.mod-user-name,
+.mod-user-mail {
+	width: 204px;
+	height: 38px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-left: 14px;
+	border: 1px solid #c7dcde;
+	border-radius: 2px;
+}
+.mod-user-mail {
+	margin-left: 15px;
+}
+.mod-user-letter {
+	width: 444px;
+	height: 112px;
+	margin-top: 10px;
+	padding-left: 14px;
+	text-align: top;
+	border: 1px solid #c7dcde;
+	border-radius: 2px;
+}
+.mail-lbl {
+	margin-left: 168px;
+	margin-right: 75px;
+}
+.button-area {
+	padding: 37px 80px;
+	background-color: #f1f1f1;
+}
+.send-btn,
+.cancel-btn {
+	width: 220px;
+	padding: 10px 0;
+
+	font-family: "Cuprum", "Arial", sans-serif;
+	outline: none;
+	border: none;
+}
+.cancel-btn {
+	color: #000;
+	background-color: #fff;
+}
+.send-btn {
+	float: left;
+	margin-right: 20px;
 }
 .modal-content-show {
 	display: block;

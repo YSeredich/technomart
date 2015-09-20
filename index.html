@@ -12,7 +12,7 @@
 		<header class="main-header">
 			<div class="status-bar">
 				<div class="container clearfix">
-					<div class="logo"><a href="#">Техномарт</a></div>
+					<div class="logo"><a href="index.html">Техномарт</a></div>
 					<div class="status-bar-links">						
 						<div class="search-wrap">
 							<input class="search" type="search" placeholder="Поиск:">
@@ -42,13 +42,13 @@
 				<nav class="menu-in-header">
 				<ul>
             		<li>
-              			<a href="#">Главная</a>
+              			<a href="index.html">Главная</a>
             		</li>
            			<li>
               			<a href="#">Компания</a>
             		</li>
             		<li>
-              			<a href="#">Каталог</a>
+              			<a href="catalog.html">Каталог</a>
             		</li>
             		<li>
               			<a href="#">Новости</a>
@@ -299,7 +299,7 @@
 		<footer class="main-footer">
 			<div class="main-footer-header">
 				<div class="clearfix container">
-					<div class="logo footer-logo"><a href="#">Техномарт</a></div>
+					<div class="logo footer-logo"><a href="index.html">Техномарт</a></div>
 					<nav class="menu-in-footer">
 						<ul>
             				<li>
@@ -309,7 +309,7 @@
               					<a href="#">Новости</a>
             				</li>
             				<li>
-              					<a href="#">Каталог</a>
+              					<a href="catalog.html">Каталог</a>
             				</li>
             				<li>
               					<a href="#">Доставка</a>
@@ -371,6 +371,23 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.3230833!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1442660567939" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
       		<button class="modal-content-close" title="Закрыть">Закрыть</button>
       		<div id="google-map"></div>
+    	</div>
+    	<div class="modal-content-write-us">
+    		<div class="modal-content-close">close</div>
+    		<form class="write-us" action="" method="post">
+    			<div class="input-area">
+    				<label class="name-lbl" for="mod-1">Ваше имя:</label>
+    				<label class="mail-lbl" for="mod-2">Ваш e-mail:</label>
+    				<input id="mod-1" type="text" class="mod-user-name" name="mod-user-name" placeholder="Представьтесь, пожалуйста" reguired>
+    				<input id="mod-2" type="text" class="mod-user-mail" name="mod-user-mail" placeholder="Для отправки ответа" reguired>
+    				<label for="mod-3">Текст письма:</label>
+    				<input id="mod-3" type="textarea" class="mod-user-letter" name="mod-user-letter" placeholder="В свободной форме">
+    			</div>
+    			<div class="button-area">
+    				<button type="submit" class="btn send-btn">Отправить</button>
+    				<button type="submit" class="btn cancel-btn">Отмена</button>
+    			</div>
+    		</form>
     	</div>
 		<script src="js/script.js"></script>
 	</body>
