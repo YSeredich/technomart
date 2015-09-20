@@ -172,6 +172,11 @@ h1 {
 	border:none;
 	background-color: #293449;
 }
+.search::-webkit-input-placeholder,
+.search::-moz-placeholder,       
+.search:-ms-input-placeholder {
+	color:#fff; 
+}
 .search:focus {
 	background-color: #fff;
 	color: #000;
@@ -815,15 +820,6 @@ h1 {
 .map-btn {
 	width: 300px;
 }
-/*catalog-info*/
-.catalog-info {
-	background-color: #f2f6f8;
-	padding:70px 0;
-}
-.catalog-info-title {
-	font-size: 30px;
-	text-transform: uppercase;
-}
 /*catalog columns*/
 .filters-column {
 	float: left;
@@ -1057,6 +1053,19 @@ input[type="radio"]:checked+label::before {
 	color: #fff;
 	background-color: #ee3643;
 	border-radius: 2px;
+}
+/*catalog-info*/
+.catalog-info {
+	background-color: #f2f6f8;
+	padding:70px 0;
+}
+.catalog-info-title {
+	margin-bottom: 25px;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.catalog-info-paragraph {
+	font-family: "PT Sans", Arial, sans-serif;
 }
 /*footer*/
 .main-footer-header,
