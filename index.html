@@ -18,8 +18,8 @@
 							<input class="search" type="search" placeholder="Поиск:">
 							<a href="#" class="icon-search search-btn"></a>
 						</div>
-						<a class="status-bar-link" href="#"><i class="icon-bookmark"></i>Закладки:0</a> 
-						<a class="status-bar-link" href="#"><i class="icon-basket"></i>Корзина:0</a>
+						<a class="status-bar-link" href="#"><i class="icon-bookmark"></i>Закладки: 0</a> 
+						<a class="status-bar-link" href="#"><i class="icon-basket"></i>Корзина: 0</a>
 						<a class="status-bar-link order" href="#">Оформить заказ</a>
 					</div>
 				</div>
@@ -27,7 +27,7 @@
 			<div class="main-header-container">
 				<div class="container ">
 					<div class="header-info clearfix">
-					<p class="short-info"> Интернет-магазин строительных материалов <br> 
+					<p class="short-info"> Интернет-магазин строительных материалов<br> 
 					<!-- стоит ли тут вводить бр?-->
 					и инструментов для ремонта </p>
 					<div class="header-contacts">
@@ -343,7 +343,7 @@
           				<a href="#" class="retouch">mail@htmlacademy.ru</a>
 					</div>
 					<div class="web-copyright">
-						<p>Разработано --</p>
+						<p>Разработано —</p>
           				<a href="#" class="copy">htmlacademy.ru</a>
 					</div>
 				</div>
@@ -354,28 +354,6 @@
       		<button class="modal-content-close" title="Закрыть">Закрыть</button>
       		<div id="google-map"></div>
     	</div>
-		<script>
-			var mapOpen = document.querySelector(".open-map");
-			var mapPopup = document.querySelector(".modal-content-map");
-			var mapClose = mapPopup.querySelector(".modal-content-close");
-
-			mapOpen.addEventListener("click", function(event) {
-        			event.preventDefault();
-        			mapPopup.classList.add("modal-content-show");
-      			});
-
-      		mapClose.addEventListener("click", function(event) {
-       				event.preventDefault();
-        			mapPopup.classList.remove("modal-content-show");
-      			});
-
-      		window.addEventListener("keydown", function(event) {
-        			if (event.keyCode == 27) {
-          			if (mapPopup.classList.contains("modal-content-show")) {
-            			mapPopup.classList.remove("modal-content-show");
-          				}
-        			}
-      			});
-		</script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
