@@ -491,8 +491,8 @@ h1 {
 	border-radius: 50%;
 	cursor: pointer;
 }
-#btn-1:checked ~ .slider-controls .slider-radio-controls-lbl:nth-child(1),
-#btn-2:checked ~ .slider-controls .slider-radio-controls-lbl:nth-child(2) {
+#btn-1:checked ~ .slider-radio-controls .drill-lbl,
+#btn-2:checked ~ .slider-controls .perforator-lbl {/*не показывает, но переключает*/
 	background-color: #ee3643;
 }
 .slider-item {
