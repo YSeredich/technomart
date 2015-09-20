@@ -376,7 +376,7 @@ h1 {
 	font-size: 14px;
 	color: #c1c6ce;
 }
-.icon-right {
+.breadcrumbs .icon-right {
 	font-size: 14px;
 	color: #c1c6ce;
 }
@@ -492,7 +492,7 @@ h1 {
 	cursor: pointer;
 }
 #btn-1:checked ~ .slider-radio-controls .drill-lbl,
-#btn-2:checked ~ .slider-controls .perforator-lbl {/*не показывает, но переключает*/
+#btn-2:checked ~ .slider-radio-controls .perforator-lbl {/*не показывает, но переключает*/
 	background-color: #ee3643;
 }
 .slider-item {
@@ -521,12 +521,13 @@ h1 {
 .slider-toggle{
 	position: absolute;
 }
-.controls{
+.controls {
 	position: absolute;
 	top:113px;
 	font-size: 45px;
 	color:#fff;
 	text-decoration: none;
+	z-index: 1000;
 }
 .prev{
 	left: 7px;
