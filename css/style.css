@@ -1255,7 +1255,8 @@ input[type="radio"]:checked+label::before {
   cursor: pointer;
   background: url("../img/Cross.png") no-repeat center;
 }
-.modal-content-write-us {
+.modal-content-write-us,
+.modal-content-cart-plus {
 	display: none;
 	position: fixed;
 	left: 50%;
@@ -1275,6 +1276,12 @@ input[type="radio"]:checked+label::before {
 }
 .input-area {
 	padding: 38px 80px 37px;
+}
+.product-add {
+	position: relative;
+	font-size: 30px;
+	padding: 67px 0 67px 180px;
+	background: #fff url("../img/cart_plus.png") no-repeat 80px 48px;
 }
 .mod-user-name,
 .mod-user-mail {
@@ -1307,7 +1314,9 @@ input[type="radio"]:checked+label::before {
 	background-color: #f1f1f1;
 }
 .send-btn,
-.cancel-btn {
+.cancel-btn,
+.order-btn,
+.continue-btn {
 	width: 220px;
 	padding: 10px 0;
 
@@ -1315,11 +1324,13 @@ input[type="radio"]:checked+label::before {
 	outline: none;
 	border: none;
 }
-.cancel-btn {
+.cancel-btn,
+.continue-btn {
 	color: #000;
 	background-color: #fff;
 }
-.send-btn {
+.send-btn,
+.order-btn {
 	float: left;
 	margin-right: 20px;
 }
