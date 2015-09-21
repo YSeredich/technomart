@@ -6,7 +6,7 @@
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href="css/reset.css" rel="stylesheet">
-    	<link href="css/style.css" rel="stylesheet">
+    	<link href="css/style.min.css" rel="stylesheet">
 
 	</head>
 	<body>
@@ -35,7 +35,7 @@
 						<p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  </p>
 					</div>
 					<div class="catalog-user-block">
-         	 			<a href="#" class="user-name">
+         	 			<a href="profile.html" class="user-name">
          	 				<i class="icon-user"></i>
          	 				Равшан Джамшутович
          	 				<i class="icon-logout"></i>
@@ -108,7 +108,7 @@
         					<div class="manufacturer-filter-title">Производители:</div>
         					<input type="checkbox" id="manufacturer-1" name="bosch" checked>
 							<label class="filter-label" for="manufacturer-1">Bosch</label>
-							<input type="checkbox" id="manufacturer-2" name="interscol">
+							<input type="checkbox" id="manufacturer-2" name="interscol" disabled>
 							<label class="filter-label" for="manufacturer-2">Интерскол</label>
 							<input type="checkbox" id="manufacturer-3" name="makita" checked>
 							<label class="filter-label" for="manufacturer-3">Makita</label>
@@ -119,12 +119,12 @@
         				</div>
         				<div class="power-filter">
         					<div class="power-filter-title">Питание:</div>
-        					<input type="radio" id="power-1"  name="battery" checked>
+        					<input type="radio" id="power-1"  name="power" checked>
         					<label class="filter-label" for="power-1">Аккумуляторные</label>
-                			<input type="radio" id="power-2" name="net" disabled>
+                			<input type="radio" id="power-2" name="power">
                 			<label class="filter-label" for="power-2">Сетевые</label>         
                 		</div>
-                		<input class="filter-submit" type="submit" value="Показать">
+                		<a href="new-page.html" class="filter-submit">Показать</a>
 					</form>
 				</div>
 				<div class="items-column">
@@ -343,6 +343,6 @@
     			<button type="submit" class="btn continue-btn">Продолжить покупки</button>
     		</div>
     	</div>
-		<script src="js/script.js"></script>
+		<script src="js/script.min.js"></script>
 	</body>
 </html>
