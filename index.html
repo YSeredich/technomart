@@ -177,8 +177,8 @@
 							<p class="old-price"></p>
 							<p class="price">12500 р.</p>
 							<div class="actions">
-                    			<a href="#" class="btn buy">Купить</a>
-                    			<a href="#" class="btn bookmark">В закладки</a>
+                    			<a href="#" class="buy">Купить</a>
+                    			<a href="#" class="bookmark">В закладки</a>
                 			</div>
 						</article>
 					</div>
@@ -245,8 +245,8 @@
 						<input type="radio" class="services-slider-toggle" id="serv-btn-3" name="serv-toggle">
 						<div class="services-slider-controls">
 							<label for="serv-btn-1" class="delivery-controls">Доставка</label>
-							<label for="serv-btn-2" class="guarantee-controls" href="#">Гарантия</label>
-							<label for="serv-btn-3" class="credit-controls" href="#">Кредит</label>
+							<label for="serv-btn-2" class="guarantee-controls">Гарантия</label>
+							<label for="serv-btn-3" class="credit-controls">Кредит</label>
 						</div>
 						<div class="slider-inners">
 							<div class="delivery slider-inner">
@@ -302,19 +302,19 @@
 					<div class="logo footer-logo"><a href="index.html">Техномарт</a></div>
 					<nav class="menu-in-footer">
 						<ul>
-            				<li>
+            				<li class="foot-menu-item">
               					<a href="#">Компания</a>
             				</li>
-            				<li>
+            				<li class="foot-menu-item">
               					<a href="#">Новости</a>
             				</li>
-            				<li>
+            				<li class="foot-menu-item">
               					<a href="catalog.html">Каталог</a>
             				</li>
-            				<li>
+            				<li class="foot-menu-item">
               					<a href="#">Доставка</a>
             				</li>
-            				<li>
+            				<li class="foot-menu-item">
               					<a href="#">Контакты</a>
             				</li>
          				</ul>
@@ -329,16 +329,16 @@
 					</p>
 					<nav class="promo-menu">
 						<ul>
-            		    	<li>
+            		    	<li class="promo-menu-item">
               					<a href="#">Материалы</a>
             				</li>
-            				<li>
+            				<li class="promo-menu-item">
               					<a href="#">Техника</a>
             				</li>
-            				<li>
+            				<li class="promo-menu-item">
               					<a href="#">Инструмент</a>
             				</li>
-            				<li>
+            				<li class="promo-menu-item">
               					<a href="#">Спецпредложения</a>
             				</li>            		
          				</ul>
@@ -374,14 +374,14 @@
     	</div>
     	<div class="modal-content-write-us">
     		<div class="modal-content-close">close</div>
-    		<form class="write-us" action="" method="post">
+    		<form class="write-us" method="post">
     			<div class="input-area">
     				<label class="name-lbl" for="mod-1">Ваше имя:</label>
     				<label class="mail-lbl" for="mod-2">Ваш e-mail:</label>
-    				<input id="mod-1" type="text" class="mod-user-name" name="mod-user-name" placeholder="Представьтесь, пожалуйста" reguired>
-    				<input id="mod-2" type="text" class="mod-user-mail" name="mod-user-mail" placeholder="Для отправки ответа" reguired>
+    				<input id="mod-1" type="text" class="mod-user-name" name="mod-user-name" placeholder="Представьтесь, пожалуйста" required>
+    				<input id="mod-2" type="text" class="mod-user-mail" name="mod-user-mail" placeholder="Для отправки ответа" required>
     				<label for="mod-3">Текст письма:</label>
-    				<input id="mod-3" type="textarea" class="mod-user-letter" name="mod-user-letter" placeholder="В свободной форме">
+    				<textarea id="mod-3" class="mod-user-letter" name="mod-user-letter">В свободной форме</textarea>
     			</div>
     			<div class="button-area">
     				<button type="submit" class="btn send-btn">Отправить</button>
