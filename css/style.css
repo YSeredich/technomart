@@ -842,6 +842,9 @@ h1 {
 	background-color: #32425c;
 	cursor: pointer;
 }
+.services-slider-controls label:last-child {
+	margin-bottom: 102px;
+}
 .services-slider-controls label:hover {
 	background-color: #293449;
 }
@@ -854,8 +857,7 @@ h1 {
 }
 .slider-inners {
 	width: 630px;
-	height: 281px;
-	overflow: hidden;
+	min-height: 281px;
 	margin-left: 320px;
 	padding-top: 5px;
 }
@@ -1372,33 +1374,33 @@ input[type="radio"]:disabled+label {
 	margin-left: 48px;
 }
 .modal-content-map {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  	display: none;
+  	position: fixed;
+  	top: 50%;
+  	left: 50%;
 
-  width: 940px;
-  height: 446px;
-  margin-left: -470px;
-  margin-top: -223px;
+  	width: 940px;
+  	height: 446px;
+  	margin-left: -470px;
+  	margin-top: -223px;
 
-  background: #e9e5dc url("../img/big_map.png");
-  box-shadow: 0 0 16px rgba(0,0,0,.7);
+  	background: #e9e5dc url("../img/big_map.png");
+  	box-shadow: 0 0 16px rgba(0,0,0,.7);
 }
 .modal-content-close {
-  position: absolute;
-  top: 9px;
-  right: 9px;
-  z-index: 10001;
+  	position: absolute;
+  	top: 9px;
+  	right: 9px;
+  	z-index: 10001;
 
-  width: 21px;
-  height: 21px;
-  border: 0;
-  outline: 0;
+  	width: 21px;
+  	height: 21px;
+  	border: 0;
+  	outline: 0;
 
-  font-size: 0;
-  cursor: pointer;
-  background: url("../img/Cross.png") no-repeat center;
+  	font-size: 0;
+  	cursor: pointer;
+  	background: url("../img/Cross.png") no-repeat center;
 }
 .modal-content-write-us,
 .modal-content-cart-plus {
