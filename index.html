@@ -376,16 +376,20 @@
     		<div class="modal-content-close">close</div>
     		<form class="write-us" method="post">
     			<div class="input-area">
-    				<label class="name-lbl" for="mod-1">Ваше имя:</label>
-    				<label class="mail-lbl" for="mod-2">Ваш e-mail:</label>
-    				<input id="mod-1" type="text" class="mod-user-name" name="mod-user-name" placeholder="Представьтесь, пожалуйста" required>
-    				<input id="mod-2" type="text" class="mod-user-mail" name="mod-user-mail" placeholder="Для отправки ответа" required>
-    				<label for="mod-3">Текст письма:</label>
+    				<div class="name-block">
+    					<label class="name-lbl" for="mod-1">Ваше имя:</label>
+    					<input id="mod-1" type="text" class="mod-user-name" name="mod-user-name" placeholder="Представьтесь, пожалуйста" required>
+    				</div>
+    				<div class="mail-block">
+    					<label class="mail-lbl" for="mod-2">Ваш e-mail:</label> 				
+    					<input id="mod-2" type="text" class="mod-user-mail" name="mod-user-mail" placeholder="Для отправки ответа" required>
+    				</div>
+    				<label class="letter-lbl" for="mod-3">Текст письма:</label>
     				<textarea id="mod-3" class="mod-user-letter" name="mod-user-letter">В свободной форме</textarea>
     			</div>
     			<div class="button-area">
     				<button type="submit" class="btn send-btn">Отправить</button>
-    				<button type="submit" class="btn cancel-btn">Отмена</button>
+    				<button type="reset" class="btn cancel-btn">Отмена</button>
     			</div>
     		</form>
     	</div>

@@ -840,6 +840,7 @@ h1 {
 	border-top: 1px solid #405069;
 	border-bottom: 1px solid #293449; 
 	background-color: #32425c;
+	cursor: pointer;
 }
 .services-slider-controls label:hover {
 	background-color: #293449;
@@ -993,7 +994,7 @@ h1 {
 .functional-sort {
 	text-decoration: none;
 	color: rgba(0,0,0,0.3);
-	border-bottom: 1px dashed #ee3643;
+	border-bottom: 1px dotted #ee3643;
 }
 .sort-title {
 	float:left;
@@ -1034,6 +1035,7 @@ h1 {
 .active-sort {
 	text-decoration: none;
 	color:#ee3643;
+	border: none;
 }
 /*range filter*/
 .range-filter-title {
@@ -1186,8 +1188,7 @@ input[type="radio"]:disabled+label {
 .filter-submit {
 	display: block;
 	width: 140px;
-	height: 31px;
-	padding-top: 7px;
+	height: 38px;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
@@ -1420,6 +1421,7 @@ input[type="radio"]:disabled+label {
 }
 .input-area {
 	padding: 38px 80px 37px;
+	font-size: 0;
 }
 .product-add {
 	position: relative;
@@ -1427,6 +1429,14 @@ input[type="radio"]:disabled+label {
 	padding: 67px 0 67px 180px;
 	background: #fff url("../img/cart_plus.png") no-repeat 80px 48px;
 }
+.name-block,
+.mail-block {
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+	font-size: 18px;
+}
+
 .mod-user-name,
 .mod-user-mail {
 	width: 204px;
@@ -1437,23 +1447,20 @@ input[type="radio"]:disabled+label {
 	border: 1px solid #c7dcde;
 	border-radius: 2px;
 }
-.mod-user-mail {
-	margin-left: 15px;
-}
+
+.letter-lbl { font-size: 18px;}
 .mod-user-letter {
 	width: 444px;
-	height: 112px;
+	height: 102px;
 	margin-top: 10px;
 	padding-left: 14px;
-	text-align: top;
+	padding-top: 10px;
+
 	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
 	color: rgba(0,0,0,0.5);
 	border: 1px solid #c7dcde;
 	border-radius: 2px;
-}
-.mail-lbl {
-	margin-left: 168px;
-	margin-right: 75px;
 }
 .button-area {
 	padding: 37px 80px;
@@ -1474,6 +1481,16 @@ input[type="radio"]:disabled+label {
 .continue-btn {
 	color: #000;
 	background-color: #fff;
+}
+.continue-btn:hover,
+.cancel-btn:hover {
+	background-color: #fff;
+	color: rgba(0,0,0,0.8);
+}
+.continue-btn:active,
+.cancel-btn:active {
+	background-color: #fff;
+	color: rgba(0,0,0,0.5);
 }
 .send-btn,
 .order-btn {
